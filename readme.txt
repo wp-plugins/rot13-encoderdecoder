@@ -24,7 +24,7 @@ A TinyMCE button is included to help bloggers select text in their posts to ROT1
 1. Upload `rot13-encoderdecoder-XXX.zip` using the file uploader on the page
 
 = Manual method =
-1. Unzip `rot13-encoderdecoder-XXX.zip` and upload the `rot13-encoder` folder to the `/wp-content/plugins/` directory
+1. Unzip `rot13-encoderdecoder-XXX.zip` and upload the `rot13-encoderdecoder` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 After installing, you can modify the plugin settings at Settings -> ROT13 Encoder/Decoder
