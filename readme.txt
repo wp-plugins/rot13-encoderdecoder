@@ -1,7 +1,7 @@
 === Rot13 Encoder/Decoder ===
 Contributors: kjvtough
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=5F58ELJ9R3PVL&lc=CA&item_name=ROT13%20Encoder%20Wordpress%20Plugin%20Donation&currency_code=CAD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Tags: rot13, cipher, hide, spoilers, triggers, punchline, solution, answer, encrypt, decrypt, encode, decode, post, page, content 
+Tags: rot13, cipher, hide, spoiler, triggers, punchline, solution, answer, encrypt, decrypt, encode, decode, post, page, content 
 Requires at least: 2.0.2
 Tested up to: 3.1
 Stable tag: 1.0
