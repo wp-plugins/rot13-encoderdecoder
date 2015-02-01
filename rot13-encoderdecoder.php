@@ -4,11 +4,11 @@ Plugin Name: ROT13 Encoder/Decoder
 Plugin URI: http://wordpress.org/plugins/rot13-encoderdecoder
 Description: Plugin to apply the ROT13 cipher to selected content, along with various methods to display decoded content.
 Author: K. Tough
-Version: 1.7
+Version: 1.7.1
 Author URI: http://wordpress.org/plugins/rot13-encoderdecoder
 */
 
-define( "ROT13_ENCODER_VERSION", "1.7" );
+define( "ROT13_ENCODER_VERSION", "1.7.1" );
 define( "ROT13_ENCODER_DECODER_TAG", "rot13" );
 define( "ROT13_ENCODER_DECODER_CSS_CLASS", "rot13_encoded" );
 define( "ROT13_ENCODER_DECODER_PLUGIN_URL", plugins_url() . "/rot13-encoderdecoder" );
