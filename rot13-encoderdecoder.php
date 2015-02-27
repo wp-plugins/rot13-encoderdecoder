@@ -4,11 +4,11 @@ Plugin Name: ROT13 Encoder/Decoder
 Plugin URI: http://wordpress.org/plugins/rot13-encoderdecoder
 Description: Plugin to apply the ROT13 cipher to selected content, along with various methods to display decoded content.
 Author: K. Tough
-Version: 1.7.1
+Version: 1.8
 Author URI: http://wordpress.org/plugins/rot13-encoderdecoder
 */
 
-define( "ROT13_ENCODER_VERSION", "1.7.1" );
+define( "ROT13_ENCODER_VERSION", "1.8" );
 define( "ROT13_ENCODER_DECODER_TAG", "rot13" );
 define( "ROT13_ENCODER_DECODER_CSS_CLASS", "rot13_encoded" );
 define( "ROT13_ENCODER_DECODER_PLUGIN_URL", plugins_url() . "/rot13-encoderdecoder" );
@@ -168,7 +168,7 @@ if ( !class_exists( "rot13EncoderDecoderPlugin" ) ) {
 		 */
 		function initSettingsPage() {
 		 			
-			$plugin_page = add_options_page( 'ROT13 Encoder/Decoder', 'ROT13 Encoder/Decoder', 'edit_posts', 'rot13_encoder_decoder', array( &$this, 'drawSettingsPage' ) );
+			$plugin_page = add_options_page( 'ROT13 Encoder/Decoder', 'ROT13 Encoder/Decoder', 'manage_options', 'rot13_encoder_decoder', array( &$this, 'drawSettingsPage' ) );
             add_action( "admin_print_styles-" . $plugin_page, array( &$this, "addAdminHeaderCode" ) );
             add_action( "admin_print_styles-edit-comments.php", array( &$this, "addAdminHeaderCode" ) );
 
@@ -583,7 +583,7 @@ if ( !class_exists( "rot13EncoderDecoderPlugin" ) ) {
                     $is_rot13ed_show_tooltip = '0';
                 }
 
-                if ( current_user_can( 'edit_comment', $comment_ID ) ) {
+                if ( current_user_can( 'moderate_comments', $comment_ID ) ) {
                     echo "\n\t<div class=\"rot13_comment_div\">";
                     echo "\n\t\t<input type=\"radio\" class=\"rot13_comment\" name=\"rot13_comment_". $comment_ID . "\" id=\"rot13_comment_no_". $comment_ID . "\" value=\"0\" " . ( ( $is_rot13ed == '0' ) ? "checked=\"checked\"" : "" ) . "/><label for=\"rot13_comment_no_". $comment_ID . "\">No</label> ";
                     echo "\n\t\t<input type=\"radio\" class=\"rot13_comment\" name=\"rot13_comment_". $comment_ID . "\" id=\"rot13_comment_yes_". $comment_ID . "\" value=\"1\" " . ( ( $is_rot13ed == '1' ) ? "checked=\"checked\"" : "" ) . "/><label for=\"rot13_comment_yes_". $comment_ID . "\">Yes</label> <br />";

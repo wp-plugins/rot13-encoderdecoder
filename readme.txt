@@ -3,8 +3,8 @@ Contributors: kjvtough
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=5F58ELJ9R3PVL&lc=CA&item_name=ROT13%20Encoder%20Wordpress%20Plugin%20Donation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: rot13, ROT13, cipher, hide, hidden, obfuscate, spoiler, warning, trigger, punchline, solution, answer, encrypt, decrypt, encode, decode, post, page, content, comment, spam, troll, trolling
 Requires at least: 2.0.2
-Tested up to: 4.1
-Stable tag: 1.7.1
+Tested up to: 4.1.1
+Stable tag: 1.8
 License: GPL2
 
 Plugin to encode/decode and display content using the ROT13 cipher.
@@ -13,7 +13,7 @@ Plugin to encode/decode and display content using the ROT13 cipher.
 
 The ROT13 Encoder/Decoder plugin allows bloggers and commenters to "encrypt" parts of their writing output with the [ROT13 cipher](http://en.wikipedia.org/wiki/ROT13) in order to conceal content from other readers who don't wish to read them.
 
-Some cases where you may want to ROT13 content:
+Some cases where you or your site users may want to ROT13 content:
 
 * Spoilers on a fan website when some visitors may not have caught up to the book/movie/TV episode being discussed.
 * Discussing sensitive topics where a trigger warning may be required.
@@ -51,8 +51,13 @@ Hopefully everything here is straightforward, but if not, post in the <a href="h
 6. Comments screen when the ROT13 Encoder/Decoder plugin is enabled.
 
 == Changelog ==
+= 1.8 =
+* Settings admin page now limited to users with `manage_options` permission (i.e., admin users only).
+* Administrative ability to ROT13 comments limited to those with `manage_comments` permission.
+* Fixed Javascript bug on Comments page.
+
 = 1.7.1 =
-* Fixed a now-nonexistant reference to a JavaScript object (fixes JS error w/ the Wordpress editor)
+* Fixed a now-nonexistent reference to a JavaScript object (fixes JS error w/ the Wordpress editor)
 
 = 1.7 =
 * Removed `rot13-encoderdecoder-admin-tinymce.js` (No need anymore; required JS variables now hooked directly into editor). Fixes incompatibility with OptimizePress.
